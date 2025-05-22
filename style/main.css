@@ -1,0 +1,52 @@
+body {
+    padding: 20px;
+}
+
+#root {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+}
+
+.toRight {
+    height: 2px;
+    border-top: 2px solid #57506ede;
+    padding-right: 2px;
+    margin-bottom: -2px;
+    transition: width 1s ease;
+    width: 100%;
+}
+
+.toLeft {
+    height: 0;
+    border-bottom: 2px solid #57506ede;
+    margin-bottom: -2px;
+    float: right;
+    transition: width 1s ease;
+    width: 100%;
+}
+
+.toTopOnRightSide {
+    height: 50px;
+    border-right: 2px solid #57506ede;
+    transition: height 1s ease;
+}
+
+.toTopOnLeftSide {
+    height: 50px;
+    border-left: 2px solid #57506ede;
+    transition: height 1s ease;
+}
+
+.hiddenWidth {
+    width: 0;
+    height: 0;
+    padding-right: 0;
+}
+
+.hiddenHeight {
+    height: 0;
+}
