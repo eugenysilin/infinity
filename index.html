@@ -20,7 +20,7 @@
           width: 100%;
       }
 
-      .right {
+      .toRight {
           height: 2px;
           border-top: 2px solid #57506ede;
           padding-right: 2px;
@@ -29,7 +29,7 @@
           width: 100%;
       }
 
-      .left {
+      .toLeft {
           height: 0;
           border-bottom: 2px solid #57506ede;
           margin-bottom: -2px;
@@ -38,25 +38,25 @@
           width: 100%;
       }
 
-      .bottom-right {
+      .toTopOnRightSide {
           height: 50px;
           border-right: 2px solid #57506ede;
           transition: height 1s ease;
       }
 
-      .bottom-left {
+      .toTopOnLeftSide {
           height: 50px;
           border-left: 2px solid #57506ede;
           transition: height 1s ease;
       }
 
-      .hidden-width {
+      .hiddenWidth {
           width: 0;
           height: 0;
           padding-right: 0;
       }
 
-      .hidden-height {
+      .hiddenHeight {
           height: 0;
       }
   </style>
@@ -69,26 +69,26 @@
   function customClass(c) {
     switch (c % 4) {
       case 1:
-        return "right";
+        return "toRight";
       case 2:
-        return "bottom-right";
+        return "toTopOnRightSide";
       case 3:
-        return "left";
+        return "toLeft";
       default:
-        return "bottom-left";
+        return "toTopOnLeftSide";
     }
   }
 
   function hiddenClass(c) {
     switch (c % 4) {
       case 1:
-        return "hidden-width";
+        return "hiddenWidth";
       case 2:
-        return "hidden-height";
+        return "hiddenHeight";
       case 3:
-        return "hidden-width";
+        return "hiddenWidth";
       default:
-        return "hidden-height";
+        return "hiddenHeight";
     }
   }
 
